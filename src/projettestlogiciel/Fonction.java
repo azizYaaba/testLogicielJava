@@ -29,7 +29,7 @@ public class Fonction {
 	public boolean estPremier(int n){
 		int nbDiviseur = 0;
 		boolean rtr=false;
-		for(int i=1,i<=n;i++){
+		for(int i=1;i<=n;i++){
 			if(n%i==0){
 				nbDiviseur+=nbDiviseur;
 			}
@@ -43,7 +43,7 @@ public class Fonction {
 	public boolean estParfait(int n){
 		int somDiviseur=0;
 		boolean rtr=false;
-		for(int i=1,i<=n;i++){
+		for(int i=1;i<=n;i++){
 			if(n%i==0){
 				somDiviseur+=i;
 			}
@@ -56,7 +56,7 @@ public class Fonction {
         
 	public int somPremierNombre(int n){
 		int somme=0;
-		for(int i=1,i<=n;i++){
+		for(int i=1;i<=n;i++){
 			somme+=somme;
 		}
 		return somme;
