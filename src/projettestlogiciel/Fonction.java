@@ -57,7 +57,7 @@ public class Fonction {
 	public int somPremierNombre(int n){
 		int somme=0;
 		for(int i=1;i<=n;i++){
-			somme+=somme;
+			somme=somme+i;
 		}
 		return somme;
 	}
