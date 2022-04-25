@@ -55,7 +55,7 @@ public class Fonction {
 			}
 		}
 		if(somDiviseur==n){
-			boolean rtr=true;
+			rtr=true;
 		}
 		return rtr;
 	}
