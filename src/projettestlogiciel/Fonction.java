@@ -59,4 +59,12 @@ public class Fonction {
 		}
 		return rtr;
 	}
+        
+	public int somPremierNombre(int n){
+		int somme=0;
+		for(int i=1,i<=n;i++){
+			somme+=somme;
+		}
+		return somme;
+	}
 }
