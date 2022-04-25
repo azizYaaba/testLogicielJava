@@ -3,7 +3,7 @@ package projettestlogiciel;
 
 import java.util.Scanner;
 
-public class testFonction {
+public class Application {
 
     public static void main(String[] args) {
         
@@ -40,42 +40,44 @@ public class testFonction {
                 
             case 3:
                 System.out.println("Entrer le nombre a tester");
-                int n = sc.nextInt();
-                boolean f=fonction.estPremier(n);
+                int nombre= sc.nextInt();
+                boolean f=fonction.estPremier(nombre);
                 if(f==true){
-                    System.out.println("Le nombre" + n + "est un nombre premier");
+                    System.out.println("Le nombre" + nombre+ "est un nombre premier");
                 }
                 else{
-                    System.out.println("Le nombre" + n + " n'est pas un nombre premier");
+                    System.out.println("Le nombre" + nombre+ " n'est pas un nombre premier");
                 }
-             }
-            break;
+             
+          break;
             
             case 4:
                 System.out.println("Entrer le nombre a tester");
-                    int n = sc.nextInt();
-                    boolean f=fonction.estParfait(n);
-                    if(f==true){
-                        System.out.println("Le nombre" + n + "est un nombre parfait");
+                    int nombr = sc.nextInt();
+                    boolean fi=fonction.estParfait(nombr);
+                    if(fi==true){
+                        System.out.println("Le nombre" + nombr + "est un nombre parfait");
                     }
                     else{
-                        System.out.println("Le nombre" + n + " n'est pas un nombre parfait");
+                        System.out.println("Le nombre" + nombr + " n'est pas un nombre parfait");
                     }
-                 }
+                 
                 break;
            case 5:
                 System.out.println("Entrer le nombre plafond");
-                    int n = sc.nextInt();
-                    int f=fonction.somPremierNombre(n);
-                    System.out.println("la somme des" + n + "premiers nombre est" + f );
+                    int nomb = sc.nextInt();
+                    int fii=fonction.somPremierNombre(nomb);
+                    System.out.println("la somme des" + nomb + "premiers nombre est" + fii );
                 break;
         default:
            System.out.println("Mauvais choix ");
            //system.exit;
             
+
+        }
         System.out.println("\n Voulez vous continuer ?\t Taper 1 pour continuer et tout tout autre chiffre pour quitter");
         continu=sc.nextInt();
-        }while(continu == 1);
-    }
-    
+    }while(continu == 1);
+         
+}
 }
