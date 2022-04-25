@@ -6,24 +6,21 @@ package projettestlogiciel;
 
 import java.util.Scanner;
 
-/**
- *
- * @author abdoulaziz
- */
-public class Application {
+public class testFonction {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
+        
         Fonction fonction = new Fonction();
         Scanner sc=new Scanner(System.in);
         int continu=0;
         
         do{
         System.out.println("***Bienvenue dans l'application de TEST LOGICIEL AVEC JUNIT***");
-        System.out.println("Taper 1 pour la fonction palindrome \t 2 pour la fonction pgcd");
-
+        System.out.println("1. Fonction pgcd");
+        System.out.println("2. Fonction palindrome");
+        System.out.println("1. Fonction estPremier");
+        System.out.println("1. Fonction estParfait");
+        System.out.println("1. Fonction pgcd");
         int choix=sc.nextInt();
         switch(choix){
             
