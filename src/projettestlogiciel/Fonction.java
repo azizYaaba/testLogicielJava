@@ -31,7 +31,7 @@ public class Fonction {
 		boolean rtr=false;
 		for(int i=1;i<=n;i++){
 			if(n%i==0){
-				nbDiviseur+=nbDiviseur;
+				nbDiviseur++;
 			}
 		}
 		if(nbDiviseur==2){
@@ -45,7 +45,7 @@ public class Fonction {
 		boolean rtr=false;
 		for(int i=1;i<=n;i++){
 			if(n%i==0){
-				somDiviseur+=i;
+				somDiviseur=somDiviseur+i;
 			}
 		}
 		if(somDiviseur==n){
