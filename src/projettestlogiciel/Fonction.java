@@ -43,7 +43,7 @@ public class Fonction {
 	public boolean estParfait(int n){
 		int somDiviseur=0;
 		boolean rtr=false;
-		for(int i=1;i<=n;i++){
+		for(int i=1;i<n;i++){
 			if(n%i==0){
 				somDiviseur=somDiviseur+i;
 			}
